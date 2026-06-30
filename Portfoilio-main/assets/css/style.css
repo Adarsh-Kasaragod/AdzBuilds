@@ -301,77 +301,47 @@ img {
 .container{
   padding: 90px;
 }
-.skills-dropdown {
-  position: relative;
-  display: inline-block;
-  margin: 20px;
-  font-family: Arial, sans-serif;
+/* ===== SKILLS (Modern Grid) =====*/
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 1.5rem;
+  justify-content: center;
 }
 
-.dropdown-btn {
-  background-color: rgb(12, 173, 213);
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  position: relative;
-  z-index: 2;
-  overflow: hidden;
-  width: 120px;
+.skill-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(135deg, rgba(210, 13, 180, 0.1), rgba(12, 173, 213, 0.1));
+  border: 1px solid rgba(210, 13, 180, 0.3);
+  padding: 10px 18px;
+  border-radius: 50px;
+  font-weight: 600;
+  color: var(--second-color);
+  font-size: 0.9rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: default;
 }
 
-.dropdown-btn::after {
-  content: '';
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 8px solid white;
-  transition: transform 0.3s ease;
+.skill-badge i {
+  font-size: 1.25rem;
+  color: rgb(210, 13, 180);
+  transition: color 0.3s ease;
 }
 
-.dropdown-btn:hover::after {
-  transform: translateY(-50%) rotate(180deg);
+.skill-badge:hover {
+  transform: translateY(-4px) scale(1.03);
+  background: linear-gradient(135deg, rgb(210, 13, 180), rgb(12, 173, 213));
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 10px 20px rgba(210, 13, 180, 0.3);
 }
 
-.skills-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 160px; /* Adjusted width for smaller screens */
-  background-color: rgb(12, 173, 213);
-  border-radius: 5px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(-10px) scale(0.8);
-  transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
-.skills-dropdown:hover .skills-list {
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0) scale(1);
-}
-
-.skills-list li {
-  padding: 10px 15px; /* Adjusted padding for smaller screens */
-  color: white;
-  font-weight: bold;
-  text-align: center;
-  transition: background-color 0.3s ease;
-}
-
-.skills-list li:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Transparent white on hover */
+.skill-badge:hover i {
+  color: #fff;
 }
 
 
