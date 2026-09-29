@@ -44,6 +44,16 @@ const scrollActive = () =>{
 }
 window.addEventListener('scroll', scrollActive)
 
+/*===== BACK TO TOP =====*/
+const backToTop = document.getElementById('back-to-top')
+window.addEventListener('scroll', () => {
+    if(window.scrollY >= 300){
+        backToTop.classList.add('visible')
+    } else {
+        backToTop.classList.remove('visible')
+    }
+})
+
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
     origin: 'top',
@@ -65,4 +75,21 @@ function downloadFile() {
     link.click();
     document.body.removeChild(link);
 }
+
+/*===== SHOW MORE CERTIFICATES =====*/
+function toggleCerts() {
+    const hiddenCerts = document.querySelectorAll('.cert-hidden')
+    const btn = document.getElementById('showMoreCerts')
+    const isExpanded = btn.classList.contains('expanded')
+
+    hiddenCerts.forEach(card => {
+        card.style.display = isExpanded ? 'none' : 'flex'
+    })
+
+    btn.classList.toggle('expanded')
+    btn.innerHTML = isExpanded
+        ? "<i class='bx bx-chevron-down'></i> Show More"
+        : "<i class='bx bx-chevron-up'></i> Show Less"
+}
+
 

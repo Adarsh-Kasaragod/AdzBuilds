@@ -4,12 +4,13 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/style.css?v=1.8">
 
         <!-- =====BOX ICONS===== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>Portfolio website </title>
+        <link rel="icon" type="image/png" href="https://ui-avatars.com/api/?name=AK&background=d20db4&color=fff&bold=true&size=64">
+        <title>Adarsh Kasaragod | Portfolio</title>
     </head>
     <body>
         <!--===== HEADER =====-->
@@ -23,8 +24,10 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
                         <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
                         <li class="nav__item"><a href="#certificates" class="nav__link">Certificates</a></li>
+                        <li class="nav__item"><a href="#internships" class="nav__link">Internships</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                     </ul>
                 </div>
@@ -38,17 +41,20 @@
         <main class="l-main">
             <!--===== HOME =====-->
             <section class="home bd-grid" id="home">
-                <div class="home__data"id="nav-menu">
-                    <h1 class="home__title"style="font-size:40px">Hi,<br>I'am <span class="home__title-color">ADARSH KASARAGOD</span><br> MCA Aspirant</h1>
+                <div class="home__data">
+                    <h1 class="home__title"style="font-size:40px; line-height: 1.2;">Hi,<br>I'm <span class="home__title-color">ADARSH KASARAGOD</span><br> <span style="font-size: 30px; font-weight: 600; color: #555;">MCA Aspirant</span></h1>
+                    <p style="margin-bottom: 2.5rem; font-weight: 500; color: #666; font-size: 1.1rem;"><i class='bx bx-map'></i> Mangaluru, Karnataka | Open to relocate to Bengaluru & Kerala</p>
 
-                    <a href="#contact" class="button">Contact</a>
-                  <a href="assets/img/adarsh_resume.png"  target="_blank" class="button">Resume</a>
-                </div>
-
-                <div class="home__social">
-                    <a href="https://www.linkedin.com/in/adarsh-kasaragod" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://www.hackerrank.com/profile/adarshvtl2003" class="home__social-icon"><i class="fa-brands fa-hackerrank"></i></a>
-                    <a href="https://github.com/adarsh-kasaragod" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    <div class="home__buttons">
+                        <a href="#contact" class="button">Contact</a>
+                        <a href="assets/img/adarsh_resume.jpg" target="_blank" class="button button--ghost">Resume</a>
+                    </div>
+                    
+                    <div class="home__social">
+                        <a href="https://www.linkedin.com/in/adarsh-kasaragod" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                        <a href="https://www.hackerrank.com/profile/adarshvtl2003" class="home__social-icon"><i class="fa-brands fa-hackerrank"></i></a>
+                        <a href="https://github.com/Adarsh-Kasaragod/AdzBuilds" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                    </div>
                 </div>
                 <div class="home__img">
                     <img src="assets/img/Adarsh_photo.jpeg" alt="Adarsh Kasaragod">
@@ -57,7 +63,7 @@
 
             <!--===== ABOUT =====-->
             <section class="about section " id="about">
-               <h1 class="sub-title"><u class="underline"><span>About</span></u></h1>
+               <h1 class="sub-title"><span class="underline">About Me</span></h1>
 
                 <div class="about__container bd-grid">
                     <div class="about__img">
@@ -65,7 +71,8 @@
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">I'am ADARSH KASARAGOD</h2>
+                        <h2 class="about__subtitle">I'm ADARSH KASARAGOD</h2>
+                        <p style="color: #666; margin-bottom: 15px; font-weight: 500;"><i class='bx bx-map'></i> Mangaluru, Karnataka | Open to relocate to Bengaluru & Kerala</p>
                         <p class="about__text"style="text-align:justify;">A Master of Computer Applications graduate seeking an opportunity to secure a challenging position in a reputable organization to expand my learnings, knowledge and skills. Beyond technical expertise, I possess strong communication and problem-solving skills, allowing me to face complex challenges and develop efficient solutions. I am confident that my spirit and skills would be a valuable asset to any team.
                         </p>   
                          <div class="skills-grid">
@@ -80,16 +87,59 @@
                             <div class="skill-badge"><i class='bx bx-brain'></i> AI/ML</div>
                             <div class="skill-badge"><i class='bx bx-camera'></i> OpenCV</div>
                             <div class="skill-badge"><i class='bx bxl-google'></i> TensorFlow</div>
+                            <div class="skill-badge"><i class='bx bxl-java'></i> Java</div>
+                            <div class="skill-badge"><i class='bx bxl-.NET'></i> .NET</div>
                         </div>
                     </div>                                   
                 </div>
             </section>
 
-        
+            <!--===== EDUCATION =====-->
+            <section class="education section" id="education">
+                <h1 class="sub-title"><span class="underline">Education</span></h1>
+
+                <div class="education__container bd-grid">
+
+                    <!-- Education 1 -->
+                    <div class="education__card">
+                        <div class="education__icon-wrap">
+                            <i class='bx bxs-graduation'></i>
+                        </div>
+                        <div class="education__content">
+                            <span class="education__badge">2024 &ndash; 2026</span>
+                            <h3 class="education__degree">Master of Computer Applications (MCA)</h3>
+                            <h4 class="education__college"><i class='bx bx-buildings'></i> St Joseph Engineering College</h4>
+                            <p class="education__affiliation">Visvesvaraya Technological University (VTU), Mangaluru</p>
+                            <div class="education__cgpa">
+                                <span class="cgpa__label">CGPA</span>
+                                <span class="cgpa__value">8.70 / 10</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Education 2 -->
+                    <div class="education__card">
+                        <div class="education__icon-wrap">
+                            <i class='bx bxs-book-open'></i>
+                        </div>
+                        <div class="education__content">
+                            <span class="education__badge">2021 &ndash; 2024</span>
+                            <h3 class="education__degree">Bachelor of Computer Applications (BCA)</h3>
+                            <h4 class="education__college"><i class='bx bx-buildings'></i> Vivekananda Degree College</h4>
+                            <p class="education__affiliation">Mangaluru, Karnataka</p>
+                            <div class="education__cgpa">
+                                <span class="cgpa__label">CGPA</span>
+                                <span class="cgpa__value">9.15 / 10</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
 
             <!--===== WORK =====-->
             <section class="work section" id="work">
-                 <h1 class="sub-title"><u class="underline"><span>Works</span></u></h1>
+                 <h1 class="sub-title"><span class="underline">Works</span></h1>
 
 
                 <div class="work__container bd-grid">
@@ -168,18 +218,36 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Project 5 -->
+                    <div class="work__card work__img">
+                        <div class="work__img-wrapper">
+                            <img src="assets/img/deepfashion.png" alt="DeepFashion">
+                        </div>
+                        <div class="work__card-content">
+                            <h3 class="work__card-title">DeepFashion</h3>
+                            <p class="work__card-description">
+                                An AI-based fashion recognition system identifying clothing items and suggesting related apparel utilizing deep learning.
+                            </p>
+                            <div class="work__actions">
+                                <a href="https://github.com/Adarsh-Kasaragod/Deepfashionspr" target="_blank" rel="noopener noreferrer">
+                                    <button type="button" class="work__btn">Code</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div> 
             </section>
 
             <!--===== CERTIFICATES =====-->
             <section class="certificates section" id="certificates">
-                <h1 class="sub-title"><u class="underline"><span>Certificates</span></u></h1>
+                <h1 class="sub-title"><span class="underline">Certificates</span></h1>
 
                 <div class="certificates__container bd-grid">
                     <!-- Certificate 1 -->
                     <div class="certificate__card">
                         <div class="certificate__img-wrapper">
-                            <img src="assets/img/java_certificate.jpeg" alt="Java Programming Certificate">
+                            <a href="assets/img/java_certificate.jpeg" target="_blank"><img src="assets/img/java_certificate.jpeg" alt="Java Programming Certificate"></a>
                         </div>
                         <div class="certificate__card-content">
                             <h3 class="certificate__card-title">Java Programming Certificate</h3>
@@ -193,7 +261,7 @@
                     <!-- Certificate 2 -->
                     <div class="certificate__card">
                         <div class="certificate__img-wrapper">
-                            <img src="assets/img/skillindia.jpeg" alt="Skill India Certificate">
+                            <a href="assets/img/skillindia.jpeg" target="_blank"><img src="assets/img/skillindia.jpeg" alt="Skill India Certificate"></a>
                         </div>
                         <div class="certificate__card-content">
                             <h3 class="certificate__card-title">Skill India Certificate</h3>
@@ -207,7 +275,7 @@
                     <!-- Certificate 3 -->
                     <div class="certificate__card">
                         <div class="certificate__img-wrapper">
-                            <img src="assets/img/reserchpaper.jpeg" alt="Research Paper Publication">
+                            <a href="assets/img/reserchpaper.jpeg" target="_blank"><img src="assets/img/reserchpaper.jpeg" alt="Research Paper Publication"></a>
                         </div>
                         <div class="certificate__card-content">
                             <h3 class="certificate__card-title">Research Paper Publication</h3>
@@ -217,12 +285,93 @@
                             </p>
                         </div>
                     </div>
+
+                    <!-- Certificate 4 -->
+                    <div class="certificate__card cert-hidden">
+                        <div class="certificate__img-wrapper">
+                            <a href="assets/img/ISRO_certificate.jpg" target="_blank"><img src="assets/img/ISRO_certificate.jpg" alt="ISRO Certificate"></a>
+                        </div>
+                        <div class="certificate__card-content">
+                            <h3 class="certificate__card-title">ISRO Certificate</h3>
+                            <p class="certificate__card-description">
+                                Successfully completed technical certification from ISRO, strengthening core competencies and demonstrating dedication to advanced learning.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 5 -->
+                    <div class="certificate__card cert-hidden">
+                        <div class="certificate__img-wrapper">
+                            <a href="assets/img/upgrad_Cer.jpeg" target="_blank"><img src="assets/img/upgrad_Cer.jpeg" alt="Upgrad Certificate"></a>
+                        </div>
+                        <div class="certificate__card-content">
+                            <h3 class="certificate__card-title">Upgrad Certificate</h3>
+                            <p class="certificate__card-description">
+                                Earned certification from upGrad in specialized technology domains, equipping with modern industry skills and hands-on exposure.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 6 -->
+                    <div class="certificate__card cert-hidden">
+                        <div class="certificate__img-wrapper">
+                            <a href="assets/img/infosys_cer.jpg" target="_blank"><img src="assets/img/infosys_cer.jpg" alt="Infosys Certificate"></a>
+                        </div>
+                        <div class="certificate__card-content">
+                            <h3 class="certificate__card-title">Infosys Certificate</h3>
+                            <p class="certificate__card-description">
+                                Obtained certification through Infosys training programs, highlighting expertise in software development methodologies and enterprise applications.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="text-align: center; margin-top: 2rem;">
+                    <button id="showMoreCerts" class="show-more-btn" onclick="toggleCerts()">
+                        <i class='bx bx-chevron-down'></i> Show More
+                    </button>
+                </div>
+
+            </section>
+
+            <!--===== INTERNSHIPS =====-->
+            <section class="certificates section" id="internships">
+                <h1 class="sub-title"><span class="underline">Internships</span></h1>
+
+                <div class="certificates__container bd-grid">
+                    <!-- Internship 1 -->
+                    <div class="certificate__card">
+                        <div class="certificate__img-wrapper">
+                            <a href="assets/img/Intership1.jpg" target="_blank"><img src="assets/img/Intership1.jpg" alt="FullStack Engineer Intern"></a>
+                        </div>
+                        <div class="certificate__card-content">
+                            <h3 class="certificate__card-title">FullStack Engineer Intern</h3>
+                            <h4 style="text-align: center; color: #555; font-size: 0.95rem; margin-bottom: 12px; font-weight: 600;">Abhimo Technologies Pvt Ltd <span style="font-size: 0.75rem; font-weight: 600; color: #10b981; background: rgba(16, 185, 129, 0.1); padding: 3px 8px; border-radius: 12px; margin-left: 4px; vertical-align: middle;">Onsite</span><br><span style="font-size: 0.85rem; color: #888; font-weight: 400; display: inline-block; margin-top: 4px;">(Feb 2024 &ndash; May 2024)</span></h4>
+                            <p class="certificate__card-description">
+                                Designed and developed robust web applications using full-stack technologies, optimized database performance, and collaborated with cross-functional teams to deliver scalable software solutions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Internship 2 -->
+                    <div class="certificate__card">
+                        <div class="certificate__img-wrapper">
+                            <a href="assets/img/Intership2.jpg" target="_blank"><img src="assets/img/Intership2.jpg" alt="AI Engineer Intern"></a>
+                        </div>
+                        <div class="certificate__card-content">
+                            <h3 class="certificate__card-title">AI Engineer Intern</h3>
+                            <h4 style="text-align: center; color: #555; font-size: 0.95rem; margin-bottom: 12px; font-weight: 600;">CodeAlpha <span style="font-size: 0.75rem; font-weight: 600; color: #3b82f6; background: rgba(59, 130, 246, 0.1); padding: 3px 8px; border-radius: 12px; margin-left: 4px; vertical-align: middle;">Remote</span><br><span style="font-size: 0.85rem; color: #888; font-weight: 400; display: inline-block; margin-top: 4px;">(July 2024 &ndash; Aug 2024)</span></h4>
+                            <p class="certificate__card-description">
+                                Contributed to the development of machine learning models, performed extensive data preprocessing and analysis, and successfully implemented AI-driven solutions to automate business processes.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
-                <h1 class="sub-title"><u class="underline"><span>Contact</span></u></h1>
+                <h1 class="sub-title"><span class="underline">Contact</span></h1>
                 <div class="contact__container bd-grid">
                     <h1 style="text-align: center;color: blueviolet;">Connect With Me</h1>
                     <p style="text-align: center;">I am availble on almost every social<br>
@@ -249,6 +398,11 @@
             <p class="footer__copy">&#169; AdzBuilds. All rigths reserved</p>
         </footer>
 
+
+        <!--===== BACK TO TOP =====-->
+        <a href="#home" class="back-to-top" id="back-to-top" title="Back to Top">
+            <i class='bx bx-up-arrow-alt'></i>
+        </a>
 
         <!--===== SCROLL REVEAL =====-->
         <script src="https://unpkg.com/scrollreveal"></script>
