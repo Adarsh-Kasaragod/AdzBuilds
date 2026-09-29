@@ -93,3 +93,26 @@ function toggleCerts() {
 }
 
 
+
+
+/*===== LIGHTBOX =====*/
+function openLightbox(imgSrc) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.src = imgSrc;
+    lightbox.style.display = 'flex';
+    setTimeout(() => {
+        lightbox.classList.add('show');
+    }, 10);
+}
+
+function closeLightbox(event) {
+    // Only close if clicking the background or the close button, not the image itself
+    if (event.target.id === 'lightbox-img') return;
+    
+    const lightbox = document.getElementById('lightbox');
+    lightbox.classList.remove('show');
+    setTimeout(() => {
+        lightbox.style.display = 'none';
+    }, 300);
+}

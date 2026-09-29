@@ -247,7 +247,7 @@
                     <!-- Certificate 1 -->
                     <div class="certificate__card">
                         <div class="certificate__img-wrapper">
-                            <a href="assets/img/java_certificate.jpeg" target="_blank"><img src="assets/img/java_certificate.jpeg" alt="Java Programming Certificate"></a>
+                            <img src="assets/img/java_certificate.jpeg" alt="Java Programming Certificate" style="cursor: zoom-in;" onclick="openLightbox(this.src)">
                         </div>
                         <div class="certificate__card-content">
                             <h3 class="certificate__card-title">Java Programming Certificate</h3>
@@ -261,7 +261,7 @@
                     <!-- Certificate 2 -->
                     <div class="certificate__card">
                         <div class="certificate__img-wrapper">
-                            <a href="assets/img/skillindia.jpeg" target="_blank"><img src="assets/img/skillindia.jpeg" alt="Skill India Certificate"></a>
+                            <img src="assets/img/skillindia.jpeg" alt="Skill India Certificate" style="cursor: zoom-in;" onclick="openLightbox(this.src)">
                         </div>
                         <div class="certificate__card-content">
                             <h3 class="certificate__card-title">Skill India Certificate</h3>
@@ -275,7 +275,7 @@
                     <!-- Certificate 3 -->
                     <div class="certificate__card">
                         <div class="certificate__img-wrapper">
-                            <a href="assets/img/reserchpaper.jpeg" target="_blank"><img src="assets/img/reserchpaper.jpeg" alt="Research Paper Publication"></a>
+                            <img src="assets/img/reserchpaper.jpeg" alt="Research Paper Publication" style="cursor: zoom-in;" onclick="openLightbox(this.src)">
                         </div>
                         <div class="certificate__card-content">
                             <h3 class="certificate__card-title">Research Paper Publication</h3>
@@ -289,7 +289,7 @@
                     <!-- Certificate 4 -->
                     <div class="certificate__card cert-hidden">
                         <div class="certificate__img-wrapper">
-                            <a href="assets/img/ISRO_certificate.jpg" target="_blank"><img src="assets/img/ISRO_certificate.jpg" alt="ISRO Certificate"></a>
+                            <img src="assets/img/ISRO_certificate.jpg" alt="ISRO Certificate" style="cursor: zoom-in;" onclick="openLightbox(this.src)">
                         </div>
                         <div class="certificate__card-content">
                             <h3 class="certificate__card-title">ISRO Certificate</h3>
@@ -302,7 +302,7 @@
                     <!-- Certificate 5 -->
                     <div class="certificate__card cert-hidden">
                         <div class="certificate__img-wrapper">
-                            <a href="assets/img/upgrad_Cer.jpeg" target="_blank"><img src="assets/img/upgrad_Cer.jpeg" alt="Upgrad Certificate"></a>
+                            <img src="assets/img/upgrad_Cer.jpeg" alt="Upgrad Certificate" style="cursor: zoom-in;" onclick="openLightbox(this.src)">
                         </div>
                         <div class="certificate__card-content">
                             <h3 class="certificate__card-title">Upgrad Certificate</h3>
@@ -315,7 +315,7 @@
                     <!-- Certificate 6 -->
                     <div class="certificate__card cert-hidden">
                         <div class="certificate__img-wrapper">
-                            <a href="assets/img/infosys_cer.jpg" target="_blank"><img src="assets/img/infosys_cer.jpg" alt="Infosys Certificate"></a>
+                            <img src="assets/img/infosys_cer.jpg" alt="Infosys Certificate" style="cursor: zoom-in;" onclick="openLightbox(this.src)">
                         </div>
                         <div class="certificate__card-content">
                             <h3 class="certificate__card-title">Infosys Certificate</h3>
@@ -342,7 +342,7 @@
                     <!-- Internship 1 -->
                     <div class="certificate__card">
                         <div class="certificate__img-wrapper">
-                            <a href="assets/img/Intership1.jpg" target="_blank"><img src="assets/img/Intership1.jpg" alt="FullStack Engineer Intern"></a>
+                            <img src="assets/img/Intership1.jpg" alt="FullStack Engineer Intern" style="cursor: zoom-in;" onclick="openLightbox(this.src)">
                         </div>
                         <div class="certificate__card-content">
                             <h3 class="certificate__card-title">FullStack Engineer Intern</h3>
@@ -356,7 +356,7 @@
                     <!-- Internship 2 -->
                     <div class="certificate__card">
                         <div class="certificate__img-wrapper">
-                            <a href="assets/img/Intership2.jpg" target="_blank"><img src="assets/img/Intership2.jpg" alt="AI Engineer Intern"></a>
+                            <img src="assets/img/Intership2.jpg" alt="AI Engineer Intern" style="cursor: zoom-in;" onclick="openLightbox(this.src)">
                         </div>
                         <div class="certificate__card-content">
                             <h3 class="certificate__card-title">AI Engineer Intern</h3>
@@ -409,5 +409,12 @@
 
         <!--===== MAIN JS =====-->
         <script src="assets/js/main.js?v=1.1"></script>
+    
+        <!--===== LIGHTBOX =====-->
+        <div id="lightbox" class="lightbox" onclick="closeLightbox(event)">
+            <span class="lightbox-close" onclick="closeLightbox(event)">&times;</span>
+            <img id="lightbox-img" class="lightbox-content">
+        </div>
+
     </body>
 </html>
